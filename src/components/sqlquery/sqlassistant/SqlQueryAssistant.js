@@ -12,7 +12,7 @@ const SqlQueryAssistant = () => {
   
     const handleGenerateResponse = async () => {
       try {
-        const apiKey = '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';
+        const apiKey = 'put API_KEY here';
         const apiUrl = 'https://api.openai.com/v1/chat/completions';
   
         const val = await axios.post(
