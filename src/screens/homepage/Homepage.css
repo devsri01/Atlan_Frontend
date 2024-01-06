@@ -1,0 +1,14 @@
+.homecontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top:3%;
+}
+
+@media (max-width: 600px) {
+    .homecontainer {
+        display: flex;
+        flex-direction: column;
+    }
+}

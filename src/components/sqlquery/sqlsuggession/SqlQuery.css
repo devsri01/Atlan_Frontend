@@ -1,0 +1,73 @@
+
+.title {
+    text-align: left;
+    margin: 10px;
+  }
+.title_2{
+    text-align: left;   
+    margin: 10px;
+    color: #615050;
+    font-size: 18px;
+}
+  
+  .inputField {
+    width: 90%;
+    height: 40px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  
+  .suggestionsList {
+    list-style: none;
+    width: 40%;
+    margin: 0; 
+    padding: 0; 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+.suggestionItem {
+    font-size: 18px;
+    color: white;
+    background-color: #0E86D4;
+    border-radius: 20px;
+    margin: 5px; 
+    padding: 10px;
+    cursor: pointer;
+}
+  
+.showAllBtn {
+  text-align: center;
+  width: 20%;
+  font-size: 18px;
+  color: white;
+  background-color: #0E86D4;
+  cursor: pointer;
+  border-radius: 20px;
+  margin: 5px; 
+  padding: 10px;
+}
+
+.showAllList {
+  list-style: none;
+  width: 20%;
+  margin: 0; 
+  padding: 0;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+
+.showAllItem {
+  font-size: 18px;
+  color: white;
+  background-color: #4cbb17;
+  border-radius: 20px;
+  margin: 8px; 
+  padding: 10px;
+}
+
+

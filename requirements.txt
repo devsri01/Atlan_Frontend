@@ -1,0 +1,4 @@
+react-export-table-to-excel
+xlsx
+npm install --save react-apexcharts apexcharts
+axios

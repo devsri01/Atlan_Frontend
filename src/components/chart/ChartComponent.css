@@ -1,0 +1,55 @@
+.chart-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .chart-options {
+    padding: 8px;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  .chart {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chart-canvas {
+    border-radius: 8px;
+  }
+  
+  .chart-legend {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .chart-tooltip {
+    font-size: 14px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chart-tooltip-title {
+    font-weight: bold;
+  }
+  
+  .chart-tooltip-marker {
+    border: 2px solid #E91E63;
+  }
+  
+  .chart-tooltip-series {
+    margin-top: 8px;
+  }
+  
+  .chart-tooltip-y-value {
+    color: #E91E63;
+    font-weight: bold;
+  }
+  
