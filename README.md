@@ -90,3 +90,6 @@ Optimisations used
 3.	The code structure has been meticulously maintained, employing minimal reusable code and adopting a structured folder-naming approach in the 'src' directory. This not only enhances code clarity but also facilitates ease of understanding for developers navigating through 'components,' 'Screens,' and 'datasets' directories.
 4.	A new tab has been implemented for selecting and displaying table data, effectively reducing page load time. This enhancement optimizes user experience by compartmentalizing the data presentation, contributing to quicker loading and smoother navigation.
 5.	The page was crafted with minimal dependencies.
+
+
+Brownie Additions: An Export tab is provided, allowing the user to export the values of the entire table to an Excel sheet whenever the column count reaches a higher value.
