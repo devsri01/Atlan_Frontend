@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import './Table2.css';
+import '../AllTable.css';
 import TableDatasets from '../../../datasets/TableDatasets';
 import * as XLSX from 'xlsx';
 import ChartComponent from '../../chart/ChartComponent';

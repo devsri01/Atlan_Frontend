@@ -36,7 +36,7 @@ const SqlQuerry = () => {
   };
 
   return (
-    <div style={{width:'40%'}}>
+    <div className="sqlQuery_container">
       <h1 className="title">SQL Generator ( suggests words for sql query completion)</h1>
       <h1 className="title_2">Click on the suggested query to insert or change the selectedValue</h1>
 

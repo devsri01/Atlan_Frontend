@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import "./Homepage.css";
+import React from "react";
 import SqlQuerry from "../../components/sqlquery/sqlsuggession/SqlQuery";
 import MergeTable from "../../components/tablecomponent/MergeTable";
 import './Homepage.css';

@@ -1,10 +1,26 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import Chart from 'react-apexcharts';
 import './ChartComponent.css';
 
 const ChartComponent = ({ cat, name1, name2, data1, data2 }) => {
   const [value, setValue] = useState('line');
   const [chartKey, setChartKey] = useState(0);
+  const [windowSize, setWindowSize] = useState([
+    window.innerWidth,
+    window.innerHeight,
+  ]);
+
+  useEffect(() => {
+    const handleWindowResize = () => {
+      setWindowSize([window.innerWidth, window.innerHeight]);
+    };
+
+    window.addEventListener('resize', handleWindowResize);
+
+    return () => {
+      window.removeEventListener('resize', handleWindowResize);
+    };
+  }, []);
 
   const handleSelectChange = (e) => {
     setValue(e.target.value);
@@ -39,7 +55,6 @@ const ChartComponent = ({ cat, name1, name2, data1, data2 }) => {
         Select Chart <i className="fas fa-user"></i>{' '}
       </h1>
       <select className="chart-options" value={value} onChange={handleSelectChange}>
-        <option value="">Select Chart</option>
         <option value="bar">Bar</option>
         <option value="line">Line</option>
         <option value="area">Area</option>
@@ -53,7 +68,7 @@ const ChartComponent = ({ cat, name1, name2, data1, data2 }) => {
           options={state.options}
           series={state.series}
           type={value}
-          width="450"
+          width={windowSize[0]*0.25+250}
           className="chart-canvas"
         />
       </div>
