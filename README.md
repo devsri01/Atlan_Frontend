@@ -1,5 +1,8 @@
+**Atlan Frontend Task**
+Link to the hosted app: https://devatlan.netlify.app/
 
-Calculated Page Load Time using Google Lighthouse Tool
+
+Calculated Page Load Time using **Google Lighthouse Tool**
 
 
 ![Screenshot (613)](https://github.com/devsri01/Atlan_Frontend/assets/77187663/cc4b7aae-ee24-4b4f-a957-e104020ed96f)
@@ -7,20 +10,20 @@ Calculated Page Load Time using Google Lighthouse Tool
 
 
 
-Technologies Used:
-1. ReactJS:
+**Technologies Used:**
+1. **ReactJS**:
    A JavaScript library for dynamic user interfaces, ReactJS efficiently updates and renders components in response to data changes, enabling the creation of interactive web applications.
-2. Axios:
+2. **Axios**:
    Handling API calls is streamlined with the Axios package, simplifying the process of making HTTP requests and managing responses for smoother communication with external servers.
-3. xlsx:
+3. **xlsx**:
    The xlsx package is employed for extracting and saving table data as an Excel sheet. This library enhances tabular data manipulation, offering a convenient solution for data storage and analysis.
-4. react-apexcharts:
+4. **react-apexcharts**:
    The react-apexcharts package transforms tabular data into visual charts, providing a graphical representation for comprehensive data analysis.
 These technologies collectively contribute to a streamlined and efficient software solution, enhancing the overall user experience and enabling advanced data analysis capabilities.
 
 
 
-Functionalities Implemented
+**Functionalities Implemented:**
 
 
 Toggling function implementation for each word typed.
@@ -68,23 +71,23 @@ Using xlsx Package.
 
 
 Chart is also implemented so as to show the data for visual analysis, the user can view the data analysis in 6 different formats – 
-•	Bar
+•	**Bar**
 
-•	Line
+•	**Line**
 
-•	Area
+•	**Area**
 
-•	Radar
+•	**Radar**
 
-•	Scatter
+•	**Scatter**
 
-•	Heatmap
+•	**Heatmap**
 
 
 ![image](https://github.com/devsri01/Atlan_Frontend/assets/77187663/8a0d38f6-778a-4ae4-9c9b-b79a55193232)
 
 
-Optimisations used
+**Optimisations used:**
 1.	Although the likelihood of mobile device usage for this application is low, the website remains highly responsive. Component styling utilizes window width and percentages to ensure adaptability.
 2.	The website is hosted on Netlify, which is a leading cloud platform, offering easy deployment, global CDN, and automatic SSL for secure and performant hosting. With built-in continuous integration, serverless functions, and forms handling, Netlify streamlines the development workflow and scales seamlessly for web applications.
 3.	The code structure has been meticulously maintained, employing minimal reusable code and adopting a structured folder-naming approach in the 'src' directory. This not only enhances code clarity but also facilitates ease of understanding for developers navigating through 'components,' 'Screens,' and 'datasets' directories.
@@ -92,4 +95,4 @@ Optimisations used
 5.	The page was crafted with minimal dependencies.
 
 
-Brownie Additions: An Export tab is provided, allowing the user to export the values of the entire table to an Excel sheet whenever the column count reaches a higher value.
+**Brownie Additions:** An Export tab is provided, allowing the user to export the values of the entire table to an Excel sheet whenever the column count reaches a higher value.
