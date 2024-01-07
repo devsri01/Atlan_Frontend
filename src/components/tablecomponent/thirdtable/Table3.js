@@ -23,23 +23,18 @@ const Table3 = () => {
       <table ref={tableref}>
         <thead>
           <tr>
-            <th>Id</th>
-            <th>Full Name</th>
-            <th>Email</th>
-            <th>Country</th>
-            <th>Bonus</th>
-            <th>Expenses</th>
+          {
+            Object.keys(TableDatasets[2][0]).map((key)=><th key={key}>{key.charAt(0).toUpperCase()+key.slice(1)}</th>)
+          }
           </tr>
         </thead>
         <tbody>
+        {TableDatasets[2].length>50 ? <div> Too much data to display, please direcly export the data</div> : null}
           {TableDatasets[2].map((data) => (
             <tr key={data.id}>
-              <td>{data.id}</td>
-              <td>{data.fullName}</td>
-              <td>{data.email}</td>
-              <td>{data.country}</td>
-              <td>{data.bonus}</td>
-              <td>{data.expenses}</td>
+            {
+              Object.values(data).map((value,index)=><td key={index}>{value}</td>)
+            }
             </tr>
           ))}
         </tbody>

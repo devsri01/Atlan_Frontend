@@ -4,7 +4,6 @@ import TableDatasets from '../../../datasets/TableDatasets';
 import * as XLSX from 'xlsx';
 import ChartComponent from '../../chart/ChartComponent';
 
-
 const Table1 = () => {
   const tableref = useRef(null);
 
@@ -15,6 +14,8 @@ const Table1 = () => {
     XLSX.writeFile(wb, 'User_Info1.xlsx');
   };
 
+  const dataset = TableDatasets[0];
+
   return (
     <div className="table-container">
       <button className="exportButton" onClick={exportToExcel}>
@@ -23,29 +24,33 @@ const Table1 = () => {
       <table ref={tableref}>
         <thead>
           <tr>
-            <th>Id</th>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Age</th>
-            <th>Weight in kg</th>
+            {Object.keys(dataset[0]).map((key) => (
+              <th key={key}>{key.charAt(0).toUpperCase() + key.slice(1)}</th>
+            ))}
           </tr>
         </thead>
         <tbody>
-          {TableDatasets[0].map((data) => (
-            <tr key={data.id}>
-              <td>{data.id}</td>
-              <td>{data.name}</td>
-              <td>{data.email}</td>
-              <td>{data.age}</td>
-              <td>{data.weight}</td>
-            </tr>
-          ))}
+        {TableDatasets[0].length>50 ? <div> Too much data to display, please direcly export the data</div> : null}
+            {
+            dataset.map((data) => (
+              <tr key={data.id}>
+                {Object.values(data).map((value, index) => (
+                  <td key={index}>{value}</td>
+                ))}
+              </tr>
+            ))
+          }
         </tbody>
       </table>
-      <ChartComponent cat={TableDatasets[0].map((data) => data.name)} name1="Age" name2="Weight" data1={TableDatasets[0].map((data) => data.age)} data2={TableDatasets[0].map((data) => data.weight)} />
+      <ChartComponent
+        cat={dataset.map((data) => data.name)}
+        name1="Age"
+        name2="Weight"
+        data1={dataset.map((data) => data.age)}
+        data2={dataset.map((data) => data.weight)}
+      />
     </div>
   );
 };
-
 
 export default Table1;
